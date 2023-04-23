@@ -1,36 +1,46 @@
-import React from 'react';
-import logo from '../assets/logo.svg'
+import React, { useState } from 'react';
+import { NavLink, Link } from 'react-router-dom';
+
+import { FaBars, FaTimes } from 'react-icons/fa';
+import logo from '../assets/logo.svg';
+
 const Header = () => {
+  const [isActive, setActive] = useState(false);
+
+  const toggleClass = () => {
+    setActive(!isActive);
+  };
+
   return (
     <>
       <header>
         <div className="logo">
-          <img src={logo} alt="logo" />
+          <Link to="/">
+            <img src={logo} alt="logo" />
+          </Link>
         </div>
-        <div className="hamburger">
-          <div className="line"></div>
-          <div className="line"></div>
-          <div className="line"></div>
+        <div className="hamburger" onClick={toggleClass}>
+          {isActive ? <FaTimes /> : <FaBars />}
         </div>
-        <nav className="navbar">
+        <nav className={isActive ? 'navbar active' : 'navbar'}>
           <ul>
             <li>
-              <a href="#">Home</a>
+              <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              <a href="#">About</a>
+              <NavLink to="/about">About</NavLink>
             </li>
             <li>
-              <a href="#">Pricing</a>
+              <NavLink to="/pricing">Pricing</NavLink>
             </li>
             <li>
-              <a href="#">Service</a>
+              <NavLink to="/service">Service</NavLink>
             </li>
             <li>
-              <a href="#">Blog</a>
+              <NavLink to="/blog">Blog</NavLink>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <NavLink to="/contact">Contact</NavLink>
             </li>
             <li>
               <button>Register</button>
