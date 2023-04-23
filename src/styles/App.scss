@@ -58,6 +58,31 @@ header {
   height: 45px;
   margin-left: 100px;
 }
+/* Home page */
+
+section {
+  background: #f2f7f9;
+  height: 800px;
+}
+
+.lead {
+  display: flex;
+  padding: 166px 0 0 240px;
+
+}
+
+.rectangle {
+  background: #D2345C;
+  height: 15px;
+  width: 15px;
+}
+
+.text {
+  margin-left: 15px;
+  text-transform: uppercase;
+}
+
+/* Media query */
 
 @media only screen and (max-width: 1320px) {
   header {
