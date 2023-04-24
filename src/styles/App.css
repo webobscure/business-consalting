@@ -65,11 +65,13 @@ section {
 }
 
 .lead {
-  display: flex;
+  display: block;
   padding: 166px 0 0 240px;
 }
 
 .rectangle {
+  position: absolute;
+  margin-left: -25px;
   background: #D2345C;
   height: 15px;
   width: 15px;
@@ -78,6 +80,21 @@ section {
 .text {
   margin-left: 15px;
   text-transform: uppercase;
+}
+
+.description {
+  font-size: 52px;
+  width: 500px;
+  height: 16px;
+}
+
+.small-text {
+  margin-top: 180px;
+  color: #8A909A;
+  width: 506px;
+  height: 81px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
 }
 
 /* Media query */
