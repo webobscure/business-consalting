@@ -1,12 +1,13 @@
-import React from 'react';
+import React from "react";
 
-import person from '../assets/person.svg';
-import { FaCheckCircle, FaPlay } from 'react-icons/fa';
+import person from "../assets/person.svg";
+import { FaCheck, FaCheckCircle, FaPlay } from "react-icons/fa";
+import { circle, codelab, lightai, treva, velocity } from "../assets";
 
 const Home = () => {
   return (
     <>
-      <section className="first-serction">
+      <section className="first-section">
         <div className="lead">
           <div className="lead-breef">
             <h5 className="text">
@@ -32,18 +33,53 @@ const Home = () => {
         <div className="lead-right">
           <div className="red-caption">
             <FaCheckCircle className="red-caption__check" />
-            <p className="red-caption__text">I'd be lost without Affirm.</p>
+            <p className="red-caption__text">I"d be lost without Affirm.</p>
           </div>
           <div className="yellow-caption">
-            <FaCheckCircle className='yellow-caption__check' />
-            <p className="yellow-caption__text">
-              the best on the net!
-            </p>
+            <FaCheckCircle className="yellow-caption__check" />
+            <p className="yellow-caption__text">the best on the net!</p>
           </div>
           <img src={person} alt="person" className="person" />
         </div>
         <div className="yellow-line"></div>
+      </section>
+      <section className="tagline">
+        <h1 className="tagline-text">Trusted by copmanies all over the world</h1>
+        <img src={lightai} alt="lightai" className="tagline-logo__first"/>
+        <img src={treva} alt="treva" className="tagline-logo"/>
+        <img src={codelab} alt="codelab" className="tagline-logo"/>
+        <img src={circle} alt="circle" className="tagline-logo"/>
+        <img src={velocity} alt="velocity" className="tagline-logo" />
+      </section>
+      <section className="information">
+        <div className="information-overview">
+          <h4 className="information-overview__text">
+            <div className="information-rectangle"></div>
+            What it does
+          </h4>
+        </div>
+        <div className="left">
+          <div className="information-pros">
+            <h2 className="information-pros__text">Supercharge your online businedd development</h2>
+            <ul className="information-pros-list">
+              <li className="information-pros-list__text">
+                <FaCheck />
+                Prioritize the features your customers need
+                </li>
+              <li className="information-pros-list__text">
+                                <FaCheck />
+                Align everyone around the roadmap
+              </li>
+              <li className="information-pros-list__text">
+                                <FaCheck />
+                Define your product vision with customer feedback
+              </li>
 
+            </ul>
+            <p className="information-description">Spend less time writing a business plan and more time building your business. We help you the best tools you need to best communicate your idea</p>
+          </div>
+        </div>
+        <div className="right"></div>
       </section>
     </>
   );
