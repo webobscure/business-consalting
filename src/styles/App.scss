@@ -10,6 +10,7 @@
   list-style: none;
   text-decoration: none;
   font-family: "Inter", "DM Sans";
+  font-size: 12px;
   box-sizing: border-box;
 }
 
@@ -65,8 +66,6 @@ header {
   height: 800px;
 }
 
-
-
 .lead {
   display: block;
   padding: 166px 0 0 140px;
@@ -99,7 +98,7 @@ header {
   width: 260px;
   height: 10px;
   border-radius: 8px;
-  background:#FEDB59;
+  background: #fedb59;
 }
 
 .small-text {
@@ -170,7 +169,6 @@ header {
 }
 
 .red-caption__text {
-  font-size: 12px;
   line-height: 21px;
   text-transform: capitalize;
   color: #ffffff;
@@ -181,7 +179,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #FEDB59;
+  background: #fedb59;
   width: 210px;
   height: 40px;
   border-radius: 8px;
@@ -194,7 +192,6 @@ header {
 }
 
 .yellow-caption__text {
-  font-size: 12px;
   line-height: 21px;
   text-transform: capitalize;
   color: #151515;
@@ -214,16 +211,17 @@ header {
 }
 
 .tagline-logo {
-  margin-left: 70px;
+  margin-left: 60px;
 }
 
 .tagline-logo__first {
   margin-left: 50px;
+  margin-top: 10px;
 }
 
 .information {
   margin-top: 100px;
-  margin-left: 160px; 
+  margin-left: 160px;
 }
 
 .information-overview {
@@ -240,13 +238,14 @@ header {
 
 .information-overview__text {
   text-transform: uppercase;
-  font-size: 12px;
   line-height: 130%;
   letter-spacing: 0.2em;
+  margin-left: 20px;
 }
 
 .information-pros {
   display: block;
+  margin-top: 10px;
 }
 
 .information-pros__text {
@@ -257,9 +256,57 @@ header {
   color: #070707;
 }
 
-.information-pros-list {
+.information-pros-list__text {
+  font-size: 18px;
+  margin-top: 5px;
+  color: var(--grayText);
+  line-height: 250%;
+}
 
-  list-style-image: url('assets/check.svg');
+.information-description {
+  margin-top: 60px;
+  font-size: 12px;
+  line-height: 150%;
+  width: 580px;
+  height: 36px;
+}
+
+.statistic {
+  width: 473px;
+  height: 400px;
+  margin: -350px 0 0 600px ;
+}
+
+.wallet {
+  position: absolute;
+  width: 380px;
+  height: 270px;
+  left: 950px;
+  top: 1350px;
+}
+
+.recent {
+  position: absolute;
+  width: 355px;
+  height: 180px;
+  top: 1110px;
+  left: 1040px;
+}
+
+.close-element {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: #D5335E;
+  border-radius: 100px;
+  left: 800px;
+  top: 1140px;
+}
+
+.close {
+  margin-top: 5px;
+  margin-left: 5px;
+  color: #fff;
 }
 /* Media query */
 

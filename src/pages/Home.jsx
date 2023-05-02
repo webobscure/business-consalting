@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
-import person from "../assets/person.svg";
-import { FaCheck, FaCheckCircle, FaPlay } from "react-icons/fa";
-import { circle, codelab, lightai, treva, velocity } from "../assets";
+import person from '../assets/person.svg';
+import { FaCheck, FaCheckCircle, FaPlay, FaTimes } from 'react-icons/fa';
+import { circle, codelab, lightai, treva, velocity, recent, statistic, wallet } from '../assets';
 
 const Home = () => {
   return (
@@ -33,7 +33,7 @@ const Home = () => {
         <div className="lead-right">
           <div className="red-caption">
             <FaCheckCircle className="red-caption__check" />
-            <p className="red-caption__text">I"d be lost without Affirm.</p>
+            <p className="red-caption__text">I'd be lost without Affirm.</p>
           </div>
           <div className="yellow-caption">
             <FaCheckCircle className="yellow-caption__check" />
@@ -45,10 +45,10 @@ const Home = () => {
       </section>
       <section className="tagline">
         <h1 className="tagline-text">Trusted by copmanies all over the world</h1>
-        <img src={lightai} alt="lightai" className="tagline-logo__first"/>
-        <img src={treva} alt="treva" className="tagline-logo"/>
-        <img src={codelab} alt="codelab" className="tagline-logo"/>
-        <img src={circle} alt="circle" className="tagline-logo"/>
+        <img src={lightai} alt="lightai" className="tagline-logo__first" />
+        <img src={treva} alt="treva" className="tagline-logo" />
+        <img src={codelab} alt="codelab" className="tagline-logo" />
+        <img src={circle} alt="circle" className="tagline-logo" />
         <img src={velocity} alt="velocity" className="tagline-logo" />
       </section>
       <section className="information">
@@ -63,24 +63,34 @@ const Home = () => {
             <h2 className="information-pros__text">Supercharge your online businedd development</h2>
             <ul className="information-pros-list">
               <li className="information-pros-list__text">
-                <FaCheck />
+                <FaCheck color="#00C59A" style={{ marginRight: '10px' }} />
                 Prioritize the features your customers need
-                </li>
+              </li>
               <li className="information-pros-list__text">
-                                <FaCheck />
+                <FaCheck color="#00C59A" style={{ marginRight: '10px' }} />
                 Align everyone around the roadmap
               </li>
               <li className="information-pros-list__text">
-                                <FaCheck />
+                <FaCheck color="#00C59A" style={{ marginRight: '10px' }} />
                 Define your product vision with customer feedback
               </li>
-
             </ul>
-            <p className="information-description">Spend less time writing a business plan and more time building your business. We help you the best tools you need to best communicate your idea</p>
+            <p className="information-description">
+              Spend less time writing a business plan and more time building your business. We help
+              you with the best tools you need to best communicate your idea.
+            </p>
           </div>
         </div>
-        <div className="right"></div>
+        <div className="right">
+          <div className="close-element">
+            <FaTimes className="close" size={15} />
+          </div>
+          <img src={statistic} alt="statistic" className="statistic" />
+          <img src={recent} alt="recent" className="recent" />
+          <img src={wallet} alt="wallet" className="wallet" />
+        </div>
       </section>
+      <section className="card"></section>
     </>
   );
 };
