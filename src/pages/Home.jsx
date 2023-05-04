@@ -90,7 +90,17 @@ const Home = () => {
           <img src={wallet} alt="wallet" className="wallet" />
         </div>
       </section>
-      <section className="card"></section>
+      <section className="card">
+        <div className="path-success">
+          <h2 className='path-success__small'>
+            <div className="path-success__rectangle"></div>
+            Your path to success
+          </h2>
+          <h1 className="path-success__text">Start building the products your customers want</h1>
+          <p className="path-success__description">Spend less time writing a plan and more time building your business.
+           We help you with the tools you need to communicate your idea.</p>
+        </div>
+      </section>
     </>
   );
 };
