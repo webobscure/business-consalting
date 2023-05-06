@@ -60,7 +60,7 @@ const Home = () => {
         </div>
         <div className="left">
           <div className="information-pros">
-            <h2 className="information-pros__text">Supercharge your online businedd development</h2>
+            <h2 className="information-pros__text">Supercharge your online business development</h2>
             <ul className="information-pros-list">
               <li className="information-pros-list__text">
                 <FaCheck color="#00C59A" style={{ marginRight: '10px' }} />
@@ -90,7 +90,7 @@ const Home = () => {
           <img src={wallet} alt="wallet" className="wallet" />
         </div>
       </section>
-      <section className="card">
+      <section className="path">
         <div className="path-success">
           <h2 className='path-success__small'>
             <div className="path-success__rectangle"></div>
@@ -100,6 +100,22 @@ const Home = () => {
           <p className="path-success__description">Spend less time writing a plan and more time building your business.
            We help you with the tools you need to communicate your idea.</p>
         </div>
+        <section className="container">
+          <div className="card">
+            <div className="card-image"></div>
+            <h1>Title</h1>
+            <h1>Title</h1>
+
+          </div>
+          <div className="card">
+            <h1>Title</h1>
+            <p>card</p>
+          </div>
+          <div className="card">
+            <h1>Title</h1>
+            <p>card</p>
+          </div>
+        </section>
       </section>
     </>
   );
