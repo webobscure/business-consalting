@@ -347,7 +347,7 @@ header {
 
 .path-success__description {
   width: 450px;
-  height: 54px; 
+  height: 54px;
   margin-left: 80px;
   font-size: 12px;
   line-height: 150%;
@@ -358,11 +358,35 @@ header {
 
 .container {
   display: flex;
+  justify-content: center;
 }
 
 .card {
+  margin-bottom: 15px;
   width: 464px;
   height: 338px;
+}
+
+.card-image-2 {
+  width: 464px;
+  height: 338px;
+  background: #00c59a;
+  background-blend-mode: ;
+  opacity: 0.03;
+  border-radius: 10px;
+}
+
+.card-1 {
+  height: 40px;
+  width: 40px;
+  border-radius: 30%;
+}
+
+.card-2 {
+  height: 40px;
+  width: 40px;
+  background: #eb5757;
+  border-radius: 30%;
 }
 /* Media query */
 

@@ -2,7 +2,7 @@ import React from 'react';
 
 import person from '../assets/person.svg';
 import { FaCheck, FaCheckCircle, FaPlay, FaTimes } from 'react-icons/fa';
-import { circle, codelab, lightai, treva, velocity, recent, statistic, wallet } from '../assets';
+import { circle, codelab, lightai, treva, velocity, recent, statistic, wallet, command, dollar, leaf } from '../assets';
 
 const Home = () => {
   return (
@@ -92,28 +92,37 @@ const Home = () => {
       </section>
       <section className="path">
         <div className="path-success">
-          <h2 className='path-success__small'>
+          <h2 className="path-success__small">
             <div className="path-success__rectangle"></div>
             Your path to success
           </h2>
           <h1 className="path-success__text">Start building the products your customers want</h1>
-          <p className="path-success__description">Spend less time writing a plan and more time building your business.
-           We help you with the tools you need to communicate your idea.</p>
+          <p className="path-success__description">
+            Spend less time writing a plan and more time building your business. We help you with
+            the tools you need to communicate your idea.
+          </p>
         </div>
         <section className="container">
           <div className="card">
-            <div className="card-image"></div>
-            <h1>Title</h1>
-            <h1>Title</h1>
-
+            <div className="card-image-1">
+              <img src={command} alt="interface" className="card-1"/>
+            </div>
+            <h1>Accelerate innovation</h1>
+            <h1>Ramp subway tile roof party squid actually deep whatever hashtag tousled mumblecore truffaut.</h1>
           </div>
           <div className="card">
-            <h1>Title</h1>
-            <p>card</p>
+            <div className="card-image-2">
+              <img src={leaf} alt="leaf" className="card-2"/>
+            </div>
+            <h1>Improve productivity</h1>
+            <h1>Ramp subway tile roof party squid actually deep whatever hashtag tousled mumblecore truffaut.</h1>
           </div>
           <div className="card">
-            <h1>Title</h1>
-            <p>card</p>
+            <div className="card-image-3">
+              <img src={dollar} alt="dollar" className="card-3"/>
+            </div>
+            <h1>Rise capital online</h1>
+            <h1>Ramp subway tile roof party squid actually deep whatever hashtag tousled mumblecore truffaut.</h1>
           </div>
         </section>
       </section>
