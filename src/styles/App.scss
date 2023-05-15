@@ -359,27 +359,13 @@ header {
 .container {
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 .card {
-  margin-bottom: 15px;
+  margin-top: 2 0px;
   width: 464px;
   height: 338px;
-}
-
-.card-image-2 {
-  width: 464px;
-  height: 338px;
-  background: #00c59a;
-  background-blend-mode: ;
-  opacity: 0.03;
-  border-radius: 10px;
-}
-
-.card-1 {
-  height: 40px;
-  width: 40px;
-  border-radius: 30%;
 }
 
 .card-2 {
@@ -387,6 +373,74 @@ header {
   width: 40px;
   background: #eb5757;
   border-radius: 30%;
+}
+
+.card-image-title {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+}
+
+.card-image-description {
+  width: 300px;
+  height: 70px;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: var(--grayText);
+  margin-left: 85px;
+}
+
+.card-image-link {
+  color: #eb5757;
+  text-decoration: underline;
+}
+
+/* Footer */
+
+.footer-container {
+  display: grid;
+  width: 1586px;
+  height: 262px;
+  margin-left: 240px;
+}
+
+.footer-title {
+  text-transform: uppercase;
+  line-height: 150%;
+  letter-spacing: 0.1em;
+  color: var(--grayText);
+}
+
+.footer-description {
+  margin-top: 15px;
+  font-size: 14px;
+  width: 430px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: var(--grayText);
+}
+
+.media {
+  display: inline;
+}
+
+
+.logos {
+  margin-top: 15px;
+  width: 39px;
+  height: 39px;
+  margin-left: 20px;
+  padding: 10px;
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 50%;
+}
+
+.logos:hover {
+  background: #797979;
+  background-blend-mode: color;
 }
 /* Media query */
 
