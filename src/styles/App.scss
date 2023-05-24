@@ -425,8 +425,8 @@ header {
 
 .media {
   display: inline;
+  margin-left: 10px;
 }
-
 
 .logos {
   margin-top: 15px;
@@ -434,13 +434,44 @@ header {
   height: 39px;
   margin-left: 20px;
   padding: 10px;
-  border: 1px solid rgba(0,0,0,0.3);
+  border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 50%;
+
 }
 
 .logos:hover {
   background: #797979;
   background-blend-mode: color;
+}
+
+.company {
+  display: inline;
+  margin-left: 500px;
+  margin-top: -165px;
+}
+
+.company-title {
+  color: var(--grayText);
+  text-transform: uppercase;
+}
+
+.company-text {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 230%;
+  letter-spacing: 0.02em;
+  color: #070707;
+}
+
+.solutions {
+  margin-left: 700px;
+  margin-top: -198px;
+}
+
+.contact {
+  margin-left: 900px;
+  margin-top: -230px;
 }
 /* Media query */
 
