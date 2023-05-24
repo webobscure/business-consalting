@@ -403,7 +403,7 @@ header {
   display: grid;
   width: 1586px;
   height: 262px;
-  margin-left: 240px;
+  margin-left: 130px;
 }
 
 .footer-title {
@@ -444,7 +444,7 @@ header {
 
 .company {
   display: inline;
-  margin-left: 500px;
+  margin-left: 600px;
   margin-top: -165px;
 }
 
@@ -463,12 +463,12 @@ header {
 }
 
 .solutions {
-  margin-left: 700px;
+  margin-left: 800px;
   margin-top: -198px;
 }
 
 .contact {
-  margin-left: 900px;
+  margin-left: 1000px;
   margin-top: -230px;
 }
 

@@ -150,7 +150,9 @@ const Home = () => {
           </div>
         </section>
       <section className="reviews">
-        
+        <reviews className="box"></reviews>
+        <reviews className="box"></reviews>
+        <reviews className="box"></reviews>
       </section>
     </>
   );
