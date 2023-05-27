@@ -14,6 +14,10 @@ import {
   command,
   dollar,
   leaf,
+  firstUser,
+  secondUser,
+  thirdUser,
+  fourthUser
 } from '../assets';
 import { Link } from 'react-router-dom';
 
@@ -117,42 +121,78 @@ const Home = () => {
         </div>
       </section>
       <section className="container">
-          <div className="card">
-            <div className="card-image-1">
-              <img src={command} alt="interface" className="card-1" />
-            </div>
-            <h1 className="card-image-title">Accelerate innovation</h1>
-            <h1 className="card-image-description">
-              Ramp subway tile roof party squid actually deep whatever hashtag tousled mumblecore
-              truffaut.
-            </h1>
+        <div className="card">
+          <div className="card-image-1">
+            <img src={command} alt="interface" className="card-1" />
           </div>
-          <div className="card">
-            <div className="card-image-2">
-              <img src={leaf} alt="leaf" className="card-2" />
-            </div>
-            <h1 className="card-image-title">Improve productivity</h1>
-            <h1 className="card-image-description">
-              Ramp subway tile roof party squid actually deep whatever hashtag tousled mumblecore
-              truffaut.
-            </h1>
-            <Link to="/" className="card-image-link">Read more</Link>
+          <h1 className="card-image-title">Accelerate innovation</h1>
+          <h1 className="card-image-description">
+            Ramp subway tile roof party squid actually deep whatever hashtag tousled mumblecore
+            truffaut.
+          </h1>
+        </div>
+        <div className="card">
+          <div className="card-image-2">
+            <img src={leaf} alt="leaf" className="card-2" />
           </div>
-          <div className="card">
-            <div className="card-image-3">
-              <img src={dollar} alt="dollar" className="card-3" />
-            </div>
-            <h1 className="card-image-title">Rise capital online</h1>
-            <h1 className="card-image-description">
-              Ramp subway tile roof party squid actually deep whatever hashtag tousled mumblecore
-              truffaut.
-            </h1>
+          <h1 className="card-image-title">Improve productivity</h1>
+          <h1 className="card-image-description">
+            Ramp subway tile roof party squid actually deep whatever hashtag tousled mumblecore
+            truffaut.
+          </h1>
+          <Link to="/" className="card-image-link">
+            Read more
+          </Link>
+        </div>
+        <div className="card">
+          <div className="card-image-3">
+            <img src={dollar} alt="dollar" className="card-3" />
           </div>
-        </section>
+          <h1 className="card-image-title">Rise capital online</h1>
+          <h1 className="card-image-description">
+            Ramp subway tile roof party squid actually deep whatever hashtag tousled mumblecore
+            truffaut.
+          </h1>
+        </div>
+      </section>
       <section className="reviews">
-        <reviews className="box"></reviews>
-        <reviews className="box"></reviews>
-        <reviews className="box"></reviews>
+        <div className="box" style={{marginLeft: "20px"}}>
+          <h1 className="box-title">"Wow what great service, I love it!"</h1>
+          <p className="box-description">
+            You won’t regret it. It’s incredible. If you aren’t sure, always go for Affirm. Affirm
+            is worth much more than I paid.
+          </p>
+          <div className="persons" >
+            <img src={firstUser} alt="logo of user" />
+            <p className="persons-info">Athan Travis</p>
+            <p className="persons-jobs">Online Marketing Specialist</p>
+          </div>
+        </div>
+        <div className="box" style={{marginLeft: "40px", marginTop: "30px"}}>
+          <h1 className="box-title">"Wow what great service, I love it!"</h1>
+          <p className="box-description">
+          You won’t regret it. It’s incredible. If you aren’t sure, always go for Affirm. Affirm is worth much more than I paid.
+          </p>
+          <div className="persons">
+            <img src={secondUser} alt="logo of user" />
+            <p className="persons-info">Athan Travis</p>
+            <p className="persons-jobs">Online Marketing Specialist</p>
+          </div>
+        </div>
+        <div className="box" style={{marginLeft: "20px", marginTop: "30px"}}>
+          <h1 className="box-title">
+          "Wow what great service, I love it!"
+          </h1>
+          <p className="box-description">
+          You won’t regret it. It’s incredible. If you aren’t sure, always go for Affirm. Affirm
+            is worth much more than I paid.
+          </p>
+          <div className="persons" >
+            <img src={thirdUser} alt="logo of user" />
+            <p className="persons-info">Athan Travis</p>
+            <p className="persons-jobs">Online Marketing Specialist</p>
+          </div>
+        </div>
       </section>
     </>
   );

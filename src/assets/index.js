@@ -12,6 +12,11 @@ export {default as leaf} from './leaf.png';
 export { default as twitter} from './twitter.svg';
 export { default as facebook} from './facebook.svg';
 export { default as instagram} from './instagram.svg';
+export { default as firstUser} from './first-user.png';
+export { default as secondUser} from './second-user.png';
+export { default as thirdUser} from './third-user.png';
+export { default as fourthUser} from './fourth-user.png';
+
 
 
 

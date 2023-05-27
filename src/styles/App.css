@@ -404,6 +404,8 @@ header {
   width: 1586px;
   height: 262px;
   margin-left: 130px;
+  margin-top: 30px;
+  background: #000;
 }
 
 .footer-title {
@@ -442,6 +444,12 @@ header {
   background-blend-mode: color;
 }
 
+.reviews {
+  width: 1920px;
+  height: 512px;
+  background: #f8fcfd;
+}
+
 .company {
   display: inline;
   margin-left: 600px;
@@ -470,6 +478,19 @@ header {
 .contact {
   margin-left: 1000px;
   margin-top: -230px;
+}
+
+.box {
+  width: 586px;
+  height: 210px;
+  box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.persons {
+  display: flex;
+  margin-top: 130px;
+  margin-left: 30px;
 }
 
 /* Media query */
